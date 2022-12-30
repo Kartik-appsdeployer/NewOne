@@ -1,0 +1,80 @@
+*{
+    list-style: none;
+    
+}
+.KartikLogo{
+    color: white;
+    font-size: 20px;
+}
+.KartikHeader img{
+    width: 47px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.KartikHeader{
+    width: 100%;
+    background: rgb(15, 15, 15);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.KartikNavToggler{
+    display: none;
+}
+.Kartiknavbar{
+    margin-top: 11px;
+}
+.Kartiknavbar ul{
+    display: flex;
+}
+.Kartiknavbar ul li a{
+    color: rgb(162, 162, 162);
+    text-decoration: none;
+    padding: 11px 9px;
+}
+.Kartiknavbar ul li a:hover{
+    color: rgb(240, 240, 240);
+}
+
+@media only screen and (max-width: 900px) {
+    .KartikNavToggler{
+        display: block;
+        cursor: pointer;
+    }
+    .KartikNavToggler .Hidden{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .Kartiknavbar{
+        height: 0px;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgb(15, 15, 15);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .Kartiknavbar.chalu{
+        height: 350px;
+    }
+    .Kartiknavbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .Kartiknavbar.chalu ul{
+        opacity: 1;
+    }
+    .Kartiknavbar ul li{
+        margin-bottom: 14px;
+    }
+}
