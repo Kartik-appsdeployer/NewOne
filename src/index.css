@@ -1,13 +1,317 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar ki CSS */
+.KartikLogo{
+  color: white;
+  font-size: 20px;
+}
+.KartikHeader img{
+  width: 47px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.KartikHeader{
+  width: 100%;
+  background: rgb(15, 15, 15);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.KartikNavToggler{
+  display: none;
+}
+.Kartiknavbar{
+  margin-top: 11px;
+}
+.Kartiknavbar ul{
+  display: flex;
+}
+.Kartiknavbar ul li a{
+  color: rgb(162, 162, 162);
+  text-decoration: none;
+  padding: 11px 9px;
+}
+.Kartiknavbar ul li a:hover{
+  color: rgb(240, 240, 240);
+}
+
+/* Home ki CSS */
+.carousel-inner{
+  height: 600px;
+}
+.carousel-control-next{
+  font-size: 10px;
+}
+
+/* Our Services ki CSS */
+.KartikServicesSection{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.ServicesHeading{
+  border-bottom: 1px solid rgb(200 182 182);
+  width: 430px;
+  margin: auto;
+  margin-bottom: 33px;
+  padding-bottom: 16px;
+}
+.ServicesLoremContent{
+  width: 1043px;
+  margin: auto;
+}
+.ServicesItems .ServicesFirstRow, .ServicesSecondRow{
+  display: flex;
+  justify-content: space-between;
+}
+.firstFirst, .firstSecond, .firstThird, .secondFirst, .secondSecond, .secondThird{
+  display: flex;
+  justify-content: space-between;
+}
+.ServicesItemsContent{
+  width: 240px;
+}
+.ServicesLogo{
+  font-size: 77px;
+  margin-top: -15px;
+  padding-right: 15px;
+}
+.ServicesItems{
+  padding-left: 161px;
+  padding-right: 161px;
+  margin-top: 50px;
+}
+.Heads{
+  font-weight: bold;
+}
+
+  /* About Us ki CSS */
+.KartikAboutUs{
+  background: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+.AboutHeading{
+  border-bottom: 1px solid rgb(114, 114, 114);
+  width: 400px;
+  padding-bottom: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.AboutChildren .ChildrenPlaying{
+  width: 465px;
+  height: 221px;
+  border: 0.5px solid;
+  border-radius: 12px;
+}
+.AboutBelowContent{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.AboutContent{
+  text-align: left;
+  padding-left: 30px;
+}
+.AboutContent .LittleCompany{
+  border-bottom: 1px solid rgb(114, 114, 114);
+  margin-bottom: 40px;
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+.Nature{
+  font-size: 13px;
+}
+
+/* Ye We Design wale ki CSS */
+.KartikDesign{
+  padding-top: 40px;
+  text-align: center;
+  background: rgb(194, 194, 194);
+  padding-bottom: 50px;
+}
+.DesignLoremSmall{
+  font-size: 15px;
+  font-weight: bold;
+}
+.DesignLoremMedium{
+  font-size: 22px;
+  font-weight: bold;
+}
+.DesignLoremBig{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+  /* Our Team ki Css */
+  .KartikOutTeam{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .TeamHeading{
+    margin: auto;
+    width: 400px;
+    border-bottom: 1px solid rgb(114, 114, 114);
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .TeamLorem{
+    width: 800px;
+    margin: auto;
+    font-weight: bold;
+  }
+  .KartikAllCards{
+    display: flex;
+    justify-content: space-between;
+  }
+  .SocialButtons{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .Card1, .Card2, .Card3, .Card4{
+    width: 300px;
+    border: 0.5px solid rgb(215, 215, 215);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .KartikCard1img, .KartikCard2img, .KartikCard3img, .KartikCard4img{
+    width: 297px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .KartikNavToggler{
+      display: block;
+      cursor: pointer;
+  }
+  .KartikNavToggler .Hidden{
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 0;
+  }
+  .Kartiknavbar{
+      height: 0px;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: rgb(15, 15, 15);
+      transition: 0.2s;
+      overflow: hidden;
+  }
+  .Kartiknavbar.chalu{
+      height: 350px;
+  }
+  .Kartiknavbar ul{
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+  }
+  .Kartiknavbar.chalu ul{
+      opacity: 1;
+  }
+  .Kartiknavbar ul li{
+      margin-bottom: 14px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .carousel-inner{
+    height: 235px;
+  }
+  .ServicesHeading{
+    margin: 0;
+    width: 360px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 13px;
+  }
+  .ServicesLoremContent{
+    width: 312px;
+    font-size: 12px;
+  }
+  .ServicesItems .ServicesFirstRow, .ServicesSecondRow{
+    display: block;
+  }
+  .firstFirst, .firstSecond, .firstThird, .secondFirst, .secondSecond, .secondThird{
+    display: block;
+  }
+  .ServicesItems{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ServicesItemsContent{
+    padding-left: 50px;
+    font-size: 14px;
+    width: 276px;
+  }
+  .AboutBelowContent{
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .AboutChildren .ChildrenPlaying{
+    width: 302px;
+  }
+  .AboutHeading{
+    width: 360px;
+  }
+  .AboutContent .LittleCompany{
+    margin-bottom: 13px;
+    padding-bottom: 13px;
+    padding-top: 37px;
+  }
+  .KartikDesign{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .KartikAllCards{
+    display: block;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .KartikOutTeam{
+    padding: 0;
+    margin-top: 34px;
+  }
+  .TeamLorem{
+    width: 360px;
+    margin-top: 20px;
+  }
+  .TeamHeading{
+    margin: 0;
+    width: 360px;
+  }
+  .Card1, .Card2, .Card3, .Card4{
+    margin-bottom: 20px;
+  }
 }
