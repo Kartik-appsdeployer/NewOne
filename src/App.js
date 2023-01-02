@@ -1,22 +1,22 @@
 import './index.css';
-import FirstSlide from './FirstSlide.jpg';
-import SecondSlide from './SecondSlide.jpg';
-import ThirdSlide from './ThirdSlide.jpg';
-import Logo from './Logo.jpeg';
-import AboutChildren from './AboutChildren.jpg';
-import Founder from './Founder.jpg';
-import Manager from './Manager.jpg';
-import Designer from './Designer.jpg';
-import SrDesigner from './SrDesigner.jpg';
-import Gallery1 from './Gallery1.jpg';
-import Gallery2 from './Gallery2.jpg';
-import Gallery3 from './Gallery3.webp';
-import Gallery4 from './Gallery4.jpg';
-import Gallery5 from './Gallery5.jpg';
-import Gallery6 from './Gallery6.jpg';
-import Gallery7 from './Gallery7.jpg';
-import Gallery8 from './Gallery8.webp';
-import Contact from './Contact.jpg';
+import FirstSlide from './Images/FirstSlide.jpg';
+import SecondSlide from './Images/SecondSlide.jpg';
+import ThirdSlide from './Images/ThirdSlide.jpg';
+import Logo from './Images/Logo.jpeg';
+import AboutChildren from './Images/AboutChildren.jpg';
+import Founder from './Images/Founder.jpg';
+import Manager from './Images/Manager.jpg';
+import Designer from './Images/Designer.jpg';
+import SrDesigner from './Images/SrDesigner.jpg';
+import Gallery1 from './Images/Gallery1.jpg';
+import Gallery2 from './Images/Gallery2.jpg';
+import Gallery3 from './Images/Gallery3.webp';
+import Gallery4 from './Images/Gallery4.jpg';
+import Gallery5 from './Images/Gallery5.jpg';
+import Gallery6 from './Images/Gallery6.jpg';
+import Gallery7 from './Images/Gallery7.jpg';
+import Gallery8 from './Images/Gallery8.webp';
+import Contact from './Images/Contact.jpg';
 
 
 function App() {
