@@ -2,6 +2,9 @@
 *{
   list-style: none;
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar ki CSS */
@@ -22,6 +25,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  position: fixed;
+  z-index: 100000;
 }
 .KartikNavToggler{
   display: none;
@@ -128,7 +133,7 @@
   border-bottom: 1px solid rgb(114, 114, 114);
   margin-bottom: 40px;
   font-size: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 .Nature{
   font-size: 13px;
@@ -178,6 +183,7 @@
   .KartikAllCards{
     display: flex;
     justify-content: space-between;
+    
   }
   .SocialButtons{
     display: flex;
@@ -186,11 +192,31 @@
     margin-bottom: 20px;
     justify-content: space-between;
   }
+  .btn-outline-dark{
+    padding-top: 9px !important;
+    padding-bottom: 6px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
   .Card1, .Card2, .Card3, .Card4{
     width: 300px;
     border: 0.5px solid rgb(215, 215, 215);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Card1:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card2:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card3:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card4:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
   .KartikCard1img, .KartikCard2img, .KartikCard3img, .KartikCard4img{
     width: 297px;
@@ -200,7 +226,172 @@
     border-top-right-radius: 5px;
   }
 
+  /* Ye Clients section ki CSS hai */
+  .KartikClients{
+    background: black;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .ClientsHeading{
+    border-bottom: 0.5px solid white;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .ClientsLorem{
+    width: 952px;
+    margin: auto;
+  }
+  .ContentAllCards{
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-between;
+  }
+  .ContentLoremCards{
+    text-align: left;
+    background: rgb(208, 208, 208);
+    color: black;
+    width: 360px;
+    margin-top: 28px;
+    border-radius: 13px;
+    padding: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  .ContentLoremCards:hover{
+    background: rgb(69, 67, 67);
+    color: white;
+    box-shadow: white 0px 1px 3px, white 0px 1px 2px;
+  }
+  .KartikAllClients{
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-between;
+  }
+  .KartikClientsDetails{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .ClientFirstImage{
+    width: 60px;
+    height: 57px;
+    border-radius: 55px;
+    margin-right: 15px;
+  }
+  .ClientSecondImage{
+    width: 60px;
+    height: 57px;
+    margin-right: 15px;
+    border-radius: 55px;
+  }
+  .ClientThirdImage{
+    width: 60px;
+    height: 57px;
+    margin-right: 15px;
+    border-radius: 55px;
+  }
+  .ClientName{
+    margin-bottom: 0;
+  }
 
+  /* Ye Gallery ki CSS */
+  .KartikGallery{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .GalleryAllImages{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .FirstGallery{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+  .SecondGallery{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Image{
+    width: 281px;
+    height: 160px;
+    opacity: 0.7;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Image:hover{
+    opacity: 2;
+    padding: 5px;
+  }
+
+  /* Ye Contact Section ki CSS */
+  .KartikContact{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 51px;
+    padding-right: 51px;
+    margin-bottom: 20px;
+  }
+  .ContactForm{
+    background: black;
+    color: white;
+    padding: 33px;
+    width: 525px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .KartikName, .KartikEmail, .KartikSubject, .KartikMessage{
+    background: #0e0e0e;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    width: 431px;
+    margin-bottom: 18px;
+    color: white;
+    border-radius: 2px;
+  }
+  .MyContactImage{
+    border-bottom-right-radius: 48px;
+    border-top-left-radius: 48px;
+    width: 600px;
+    transition: 0.5s;
+  }
+  .MyContactImage:hover{
+    width: 620px;
+  }
+  .ContactBtn{
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .ContactBtn:hover{
+    background: #e2e2e2;
+  }
+
+  .KartikFooter{
+    background: rgb(35 35 35);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
 
 
 @media only screen and (max-width: 900px) {
@@ -249,7 +440,8 @@
   }
   .ServicesHeading{
     margin: 0;
-    width: 360px;
+    width: 189px;
+    margin: auto;
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 13px;
@@ -263,16 +455,25 @@
   }
   .firstFirst, .firstSecond, .firstThird, .secondFirst, .secondSecond, .secondThird{
     display: block;
+    border: 0.5px solid #a8a2a2;
+    padding: 15px;
+    border-radius: 32px;
+    margin-bottom: 25px;
+    background: #dbdbdb;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .ServicesItems{
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .ServicesItemsContent{
-    padding-left: 50px;
     font-size: 14px;
     width: 276px;
+  }
+  .KartikAboutUs{
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .AboutBelowContent{
     display: block;
@@ -283,12 +484,17 @@
     width: 302px;
   }
   .AboutHeading{
-    width: 360px;
+    width: 176px;
+  }
+  .AboutContent{
+    padding-left: 19px;
+    padding-right: 19px;
   }
   .AboutContent .LittleCompany{
     margin-bottom: 13px;
     padding-bottom: 13px;
     padding-top: 37px;
+    width: 266px;
   }
   .KartikDesign{
     padding-right: 10px;
@@ -308,10 +514,75 @@
     margin-top: 20px;
   }
   .TeamHeading{
-    margin: 0;
-    width: 360px;
+    width: 188px;
+    margin: auto;
   }
   .Card1, .Card2, .Card3, .Card4{
     margin-bottom: 20px;
+    transition: 0.5s;
+  }
+  .Card1:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card2:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card3:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .Card4:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .ClientsHeading{
+    margin-left: 28px;
+    text-align: left;
+  }
+  .ClientsLorem{
+    width: 331px;
+    text-align: left;
+    padding-left: 28px;
+    margin-left: 0;
+  }
+  .ContentAllCards{
+    display: block;
+  }
+  .KartikAllClients{
+    display: block;
+    padding-left: 28px;
+  }
+  .ContentAllCards{
+    padding-left: 28px;
+  }
+  .ContentLoremCards{
+    width: 310px;
+  }
+  .SecondGallery{
+    display: block;
+  }
+  .FirstGallery{
+    display: block;
+  }
+  .GalleryAllImages{
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+  .Image{
+    margin-bottom: 20px;
+    width: 310px;
+    height: 160px;
+  }
+  .KartikContact{
+    display: block;
+    padding-left: 28px;
+  }
+  .MyContactImage{
+    display: none;
+  }
+  .ContactForm{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .KartikName, .KartikEmail, .KartikSubject, .KartikMessage{
+    width: 207px;
   }
 }

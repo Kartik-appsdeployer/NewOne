@@ -8,6 +8,15 @@ import Founder from './Founder.jpg';
 import Manager from './Manager.jpg';
 import Designer from './Designer.jpg';
 import SrDesigner from './SrDesigner.jpg';
+import Gallery1 from './Gallery1.jpg';
+import Gallery2 from './Gallery2.jpg';
+import Gallery3 from './Gallery3.webp';
+import Gallery4 from './Gallery4.jpg';
+import Gallery5 from './Gallery5.jpg';
+import Gallery6 from './Gallery6.jpg';
+import Gallery7 from './Gallery7.jpg';
+import Gallery8 from './Gallery8.webp';
+import Contact from './Contact.jpg';
 
 
 function App() {
@@ -31,20 +40,20 @@ function App() {
 
         <nav className="Kartiknavbar">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Out Team</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Calculator</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#kartikhome">Home</a></li>
+            <li><a href="#kartikourservices">Services</a></li>
+            <li><a href="#kartikabout">About</a></li>
+            <li><a href="#kartikourteam">Our Team</a></li>
+            <li><a href="#kartikgallery">Portfolio</a></li>
+            <li><a href="#kartikhome">Calculator</a></li>
+            <li><a href="#kartikcontact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
 
       {/* Ye Home Content rahega */}
-      <div className="KartikHomeCarousal">
+      <div id='kartikhome' className="KartikHomeCarousal">
         <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -69,9 +78,9 @@ function App() {
       </div>
 
       {/* Ye Our Services wala rahega */}
-      <div className="KartikServicesSection">
+      <div id='kartikourservices' className="KartikServicesSection">
         <div className="ServicesHeading">
-          <h1 className='KartikServiceHeading'>Our Services</h1>
+          <h1 className='KartikServiceHeading'>Our Services <i class="fa fa-cogs" aria-hidden="true"></i></h1>
         </div>
         <div className="ServicesLoremContent">
           <p className='LoremContent'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus deserunt molestias voluptas cum maiores eos quidem doloremque iusto ad aliquid numquam odit qui rem neque laborum dicta iure error totam, incidunt quibusdam Illo?</p>
@@ -151,9 +160,9 @@ function App() {
       </div>
 
       {/* Ye About Us Wala rahega */}
-      <div className="KartikAboutUs">
+      <div id='kartikabout' className="KartikAboutUs">
         <div className="AboutHeading">
-          <h1 className="KartikAboutHeading">About us</h1>
+          <h1 className="KartikAboutHeading">About us <i class="fa fa-question-circle" aria-hidden="true"></i></h1>
         </div>
 
         <div className="AboutLoremContent">
@@ -182,9 +191,9 @@ function App() {
         <button className="btn btn-outline-primary">Get it now!!!</button>
       </div>
 
-      <div className="KartikOutTeam">
+      <div id='kartikourteam' className="KartikOutTeam">
         <div className="TeamHeading">
-          <h1 className="KartikTeamHeading">Our Team</h1>
+          <h1 className="KartikTeamHeading">Our Team <i class="fa fa-users" aria-hidden="true"></i></h1>
         </div>
 
         <div className="TeamLorem">
@@ -197,10 +206,10 @@ function App() {
             <h3 className="FounderName">Micky Deo</h3>
             <p className="Position">Founder</p>
             <div className="SocialButtons">
-              <button className="btn btn-outline-primary"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-google" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-google" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
             </div>
           </div>
 
@@ -209,10 +218,10 @@ function App() {
             <h3 className="ManagerName">Mike Timobbs</h3>
             <p className="Position">Manager</p>
             <div className="SocialButtons">
-              <button className="btn btn-outline-primary"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-google" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-google" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
             </div>
           </div>
 
@@ -221,10 +230,10 @@ function App() {
             <h3 className="SrDesignerName">Remo Silvaus</h3>
             <p className="Position">Sr Designer</p>
             <div className="SocialButtons">
-              <button className="btn btn-outline-primary"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-google" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-google" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
             </div>
           </div>
 
@@ -233,13 +242,117 @@ function App() {
             <h3 className="DesignerName">Niscal Deon</h3>
             <p className="Position">Designer</p>
             <div className="SocialButtons">
-              <button className="btn btn-outline-primary"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-twitter" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-google" aria-hidden="true"></i></button>
-              <button className="btn btn-outline-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-google" aria-hidden="true"></i></button>
+              <button className="btn btn-outline-dark"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Ye Clients Wala section rahega */}
+      <div className="KartikClients">
+        <div className="ClientsHeading">
+          <h1 className="KartikClientHeading">What our clients says <i class="fa fa-handshake-o" aria-hidden="true"></i></h1>
+        </div>
+
+        <div className="ClientsLorem">
+          <p className="KartikClientsLorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae suscipit perspiciatis enim facere iste ipsam reprehenderit nisi minima dolorum vitae reiciendis rerum, corporis temporibus quisquam, accusantium aut. Similique, ad magnam!</p>
+        </div>
+
+        <div className="ContentAllCards">
+          <div className="ContentLoremCards">
+            <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
+          </div>
+          <div className="ContentLoremCards">
+            <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
+          </div>
+          <div className="ContentLoremCards">
+            <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
+          </div>
+
+
+        </div>
+
+        <div className="KartikAllClients">
+          <div className="KartikClientsDetails">
+            <img src={Manager} alt="" className="ClientFirstImage" />
+            <div className="ClientDetails">
+              <p className="ClientName">John Bond</p>
+              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div className="KartikClientsDetails">
+            <img src={SrDesigner} alt="" className="ClientSecondImage" />
+            <div className="ClientDetails">
+              <p className="ClientName">Soeien Sons</p>
+              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div className="KartikClientsDetails">
+            <img src={Designer} alt="" className="ClientThirdImage" />
+            <div className="ClientDetails">
+              <p className="ClientName">Hosen Bone</p>
+              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Ye Gallery wala Section rahega */}
+      <div id='kartikgallery' className="KartikGallery">
+        <div className="GalleryHeading">
+          <h1 className="KartikGalleryHeading">Gallery <i class="fa fa-picture-o" aria-hidden="true"></i></h1>
+        </div>
+
+        <div className="GalleryLorem">
+          <p className="KartikGalleryLorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, porro.</p>
+        </div>
+
+        <div className="GalleryAllImages">
+          <div className="FirstGallery">
+            <img src={Gallery1} alt="" className="Image" />
+            <img src={Gallery2} alt="" className="Image" />
+            <img src={Gallery3} alt="" className="Image" />
+            <img src={Gallery4} alt="" className="Image" />
+          </div>
+
+          <div className="SecondGallery">
+            <img src={Gallery5} alt="" className="Image" />
+            <img src={Gallery6} alt="" className="Image" />
+            <img src={Gallery7} alt="" className="Image" />
+            <img src={Gallery8} alt="" className="Image" />
+          </div>
+        </div>
+      </div>
+
+      {/* .Ye Contact Form rahega */}
+      <div className="KartikContact" id="kartikcontact">
+        <div className="ContactForm">
+          <div className="ContactDiv">
+            <div className="KartikContactHeading">
+              <h1 className="ContactHeading">Contact <i class="fa fa-envelope" aria-hidden="true"></i></h1>
+              
+            </div>
+
+            <div className="ContactContent">
+              <input type="text" className="KartikName" placeholder='Name...' /><br />
+              <input type="text" className="KartikEmail" placeholder='Email...' /><br />
+              <input type="text" className="KartikSubject" placeholder='Subject...' /><br />
+              <input type="text" className="KartikMessage" placeholder='Message...' /><br />
+              <button className='ContactBtn'>Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="ContactImage">
+          <img src={Contact} alt="" className="MyContactImage" />
+        </div>
+      </div>
+
+      <div className="KartikFooter">
+        <p>@2023 Powered by Edunomics</p>
       </div>
 
     </div>
