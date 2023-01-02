@@ -440,14 +440,15 @@
   }
   .ServicesHeading{
     margin: 0;
-    width: 189px;
-    margin: auto;
+    width: 195px;
+    margin-left: 25px;
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 13px;
   }
   .ServicesLoremContent{
     width: 312px;
+    text-align: left;
     font-size: 12px;
   }
   .ServicesItems .ServicesFirstRow, .ServicesSecondRow{
@@ -483,8 +484,15 @@
   .AboutChildren .ChildrenPlaying{
     width: 302px;
   }
+  .AboutLoremContent{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .AboutHeading{
     width: 176px;
+    text-align: left;
+    margin-left: 20px;
   }
   .AboutContent{
     padding-left: 19px;
@@ -497,8 +505,9 @@
     width: 266px;
   }
   .KartikDesign{
-    padding-right: 10px;
-    padding-left: 10px;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .KartikAllCards{
     display: block;
@@ -510,12 +519,15 @@
     margin-top: 34px;
   }
   .TeamLorem{
-    width: 360px;
+    width: 328px;
     margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
   }
   .TeamHeading{
     width: 188px;
-    margin: auto;
+    text-align: left;
+    margin-left: 30px;
   }
   .Card1, .Card2, .Card3, .Card4{
     margin-bottom: 20px;
@@ -555,6 +567,18 @@
   }
   .ContentLoremCards{
     width: 310px;
+  }
+
+  .GalleryHeading{
+    text-align: left;
+    margin-left: 28px;
+    border-bottom: 1px solid #b0abab;
+    width: 200px;
+    margin-bottom: 16px;
+  }
+  .GalleryLorem{
+    text-align: left;
+    margin-left: 27px;
   }
   .SecondGallery{
     display: block;
