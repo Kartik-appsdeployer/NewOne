@@ -54,7 +54,7 @@ function App() {
 
       {/* Ye Home Content rahega */}
       <div id='kartikhome' className="KartikHomeCarousal">
-        <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <div id="carouselExample" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="d-block w-100" src={FirstSlide} alt="" />
@@ -264,37 +264,32 @@ function App() {
         <div className="ContentAllCards">
           <div className="ContentLoremCards">
             <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
+            <div className="KartikClientsDetails">
+              <img src={Manager} alt="" className="ClientFirstImage" />
+              <div className="ClientDetails">
+                <p className="ClientName">John Bond</p>
+                <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
           </div>
           <div className="ContentLoremCards">
             <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
+            <div className="KartikClientsDetails">
+              <img src={SrDesigner} alt="" className="ClientSecondImage" />
+              <div className="ClientDetails">
+                <p className="ClientName">Soeien Sons</p>
+                <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
           </div>
           <div className="ContentLoremCards">
             <p className="ContentCard">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, iure! Libero quam animi ipsam sapiente doloribus ab quas, fugit eveniet.</p>
-          </div>
-
-
-        </div>
-
-        <div className="KartikAllClients">
-          <div className="KartikClientsDetails">
-            <img src={Manager} alt="" className="ClientFirstImage" />
-            <div className="ClientDetails">
-              <p className="ClientName">John Bond</p>
-              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div className="KartikClientsDetails">
-            <img src={SrDesigner} alt="" className="ClientSecondImage" />
-            <div className="ClientDetails">
-              <p className="ClientName">Soeien Sons</p>
-              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-          <div className="KartikClientsDetails">
-            <img src={Designer} alt="" className="ClientThirdImage" />
-            <div className="ClientDetails">
-              <p className="ClientName">Hosen Bone</p>
-              <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+            <div className="KartikClientsDetails">
+              <img src={Designer} alt="" className="ClientThirdImage" />
+              <div className="ClientDetails">
+                <p className="ClientName">Hosen Bone</p>
+                <p className="ClientContent">Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -333,7 +328,7 @@ function App() {
           <div className="ContactDiv">
             <div className="KartikContactHeading">
               <h1 className="ContactHeading">Contact <i class="fa fa-envelope" aria-hidden="true"></i></h1>
-              
+
             </div>
 
             <div className="ContactContent">

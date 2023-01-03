@@ -276,7 +276,11 @@
   .KartikClientsDetails{
     display: flex;
     text-align: left;
+    padding-right: 52px;
     justify-content: space-between;
+  }
+  .ClientName{
+    font-weight: bold;
   }
   .ClientFirstImage{
     width: 60px;
@@ -433,16 +437,111 @@
   .Kartiknavbar ul li{
       margin-bottom: 14px;
   }
+  
 }
-@media only screen and (max-width: 500px){
+@media (min-width: 501px) and (max-width: 800px) {
+  
+  .carousel-inner{
+    width: 238% !important;
+  }
+  .KartikServicesSection{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikAboutUs{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikDesign{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikOutTeam{
+    width: 238%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .KartikClients{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikGallery{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikContact{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .KartikFooter{
+    width: 238%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+  
+  .carousel-inner{
+    width: 238% !important;
+  }
+  .KartikServicesSection{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikAboutUs{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikDesign{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikOutTeam{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikClients{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikGallery{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikContact{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .KartikFooter{
+    width: 238%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 500px){
   .carousel-inner{
     height: 235px;
   }
   .ServicesHeading{
     margin: 0;
-    width: 195px;
+    width: 248px;
     margin-left: 25px;
-    text-align: center;
+    text-align: left;
     padding-bottom: 0px;
     margin-bottom: 13px;
   }
@@ -450,6 +549,8 @@
     width: 312px;
     text-align: left;
     font-size: 12px;
+    margin: 0;
+    margin-left: 25px;
   }
   .ServicesItems .ServicesFirstRow, .ServicesSecondRow{
     display: block;
@@ -478,7 +579,8 @@
   }
   .AboutBelowContent{
     display: block;
-    padding-left: 0;
+    padding-left: 21px;
+    text-align: left;
     padding-right: 0;
   }
   .AboutChildren .ChildrenPlaying{
@@ -495,8 +597,7 @@
     margin-left: 20px;
   }
   .AboutContent{
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 0;
   }
   .AboutContent .LittleCompany{
     margin-bottom: 13px;
@@ -558,17 +659,12 @@
   .ContentAllCards{
     display: block;
   }
-  .KartikAllClients{
-    display: block;
-    padding-left: 28px;
-  }
   .ContentAllCards{
     padding-left: 28px;
   }
   .ContentLoremCards{
     width: 310px;
   }
-
   .GalleryHeading{
     text-align: left;
     margin-left: 28px;
